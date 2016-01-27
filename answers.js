@@ -1,8 +1,14 @@
 // this is to reverse the characters in the string
-function reverse(s) {
-  var o = '';
-  for (var i = s.length - 1; i >= 0; i--)
-    o += s[i];
-  return o;
+function factorial(num){
+    if (num < 0) {
+        return -1;
+    }else if (num == 0) {
+        return 1;
+    }
+    var tmp = num;
+    while (num-- > 2) {
+        tmp *= num;
+    }
+    return tmp;
 }
-console.log(reverse("andrew tognarini"))
+console.log(factorial(8))
