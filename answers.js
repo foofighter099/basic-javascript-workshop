@@ -1,6 +1,23 @@
 // this is to return the sum of the two numbers
-var numSum = function(num1,num2){
-    return(parseInt(num1)*parseInt(num2));
+var twoNum = function (num1,num2){
+var answer = prompt ("would you like to add, subtract, mult, or div?");
+    switch(answer){
+        case 'add':
+            alert(parseInt(num1)+parseInt(num2));
+            break;
+        case 'subtract':
+            alert(parseInt(num1)-parseInt(num2));
+            break;
+        case 'mult':
+            alert(parseInt(num1)*parseInt(num2));
+            break;
+        case 'div':
+            alert(parseInt(num1)/parseInt(num2));
+            break;
+        default:
+            alert(0);
+            break;
+    }
 }
-console.log(numSum(5,10))
-//if we input something other than a number (ex:"jar") we get an output of: NaN (not a number)
+twoNum(5,4)
+   
