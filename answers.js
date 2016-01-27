@@ -1,5 +1,6 @@
-// this is to return the character at the position represented by the number
-var numChar = function(string,number) {
-    return string.substr((parseInt(number)-1),1);
+// this is to return the addition of the two numbers
+var numAdd = function(num1,num2){
+    return(parseInt(num1)+parseInt(num2));
 }
-console.log(numChar("abcdefghijklmnopqrstuvwxyz",20))
+console.log(numAdd(5,10))
+//if we input something other than a number (ex:"jar") we get an output of: NaN (not a number)
