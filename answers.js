@@ -1,5 +1,5 @@
-// this is to return the first letter of a string
-function firstLetter(str) {
-    return str.slice(0,1);
+// this is to return the last letter of a string
+function lastLetter(str) {
+    return str.slice(str.length-1);
 }
-console.log(firstLetter("Andrew"))
+console.log(lastLetter("Andrew"))
